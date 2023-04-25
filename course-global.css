@@ -4,7 +4,7 @@ body{
 	box-sizing: border-box;
 	background-color: var(--bg-color);
 	padding: 5rem 2rem;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Montserrat", sans-serif !important;
 }
 
 /********* STEP BY STEP STYLES *****/
