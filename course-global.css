@@ -1,0 +1,600 @@
+/********* RCI DO NOT COPY THESE TOP STYLES ********/
+
+body{
+	box-sizing: border-box;
+	background-color: var(--bg-color);
+	padding: 5rem 2rem;
+}
+
+
+.card-wrap {
+	max-width: 1100px;
+	margin: auto;
+}
+
+.card-wrap .step-by-step {
+	border-radius: 20px;
+	padding: 4rem 0;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/********* RCI COPY FROM BELOW HERE *****/
+
+
+/********* STEP BY STEP STYLES *****/
+
+/* Colors */
+
+:root {
+	--highlight-yellow: #fff2cc;
+	--highlight-red: #f4cccc;
+	--highlight-green: #d9ead3;
+	--highlight-purple:#e0cfff;
+	
+	--bg-color: #f8f9fa;
+	
+	--pink:#ED58A2;
+	--orange:#F28C0F;
+	--yellow:#FFD932;
+	--lime:#9BBF00;
+	--blue:#01C0FC;
+	--purple:#9E77E8;
+	--brown:#d3bdac;
+	--magenta:#b71282;
+	--crimson-red:#C81E52;
+	--royal-blue: #4969e1;
+	--gold: #daa520;
+	
+	--plan-aqua:#01C0FC;
+	--plan-mid-blue:#0099E0;
+	--plan-dark-blue:#036DA7;
+	--plan-darkest-blue:#023F76;
+	--plan-pink:#C81E52;
+	--plan-green:#19DC92;
+	--plan-yellow:#FFD932;
+}		
+
+.step-by-step .img-container {
+	margin-left:0px;
+	margin-bottom:50px;
+}
+
+.step-by-step img {
+	width:100%;
+	height:auto;
+	max-width:800px;
+}
+
+.step-by-step h1, .step-by-step h2 {
+	color: var(--plan-darkest-blue);
+}
+
+.step-by-step h2 {
+	font-size:24px;
+}
+
+.step-by-step ol li {
+	margin-top:20px;
+}
+
+.step-by-step ol.abc {
+	list-style-type:upper-alpha;
+}
+
+.step-by-step li, .step-by-step p {
+	font-size:1em;
+	font-weight:500;
+	margin-bottom:20px;
+}
+
+.step-by-step li .list-heading {
+	color:black;
+	font-weight:bold;
+}
+
+.step-by-step .ui-name {
+	color: var(--plan-darkest-blue);
+	font-style:normal;
+	font-weight:800;
+}
+
+.step-by-step a {
+	color: var(--plan-mid-blue);
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.step-by-step a:hover {
+	color: var(--plan-mid-blue);
+	text-decoration:underline;
+}
+
+.step-by-step p.suggestion-request {
+	margin-top:50px;
+	text-align:center;
+}
+
+.step-by-step p a.email-suggestion {
+	text-align:center;
+	display:inline-block;
+	background-color:var(--plan-mid-blue);
+	color:white;
+	border-radius:5px;
+	padding:0px 15px;
+	line-height:40px;
+	margin-top:15px;
+	text-decoration: none;
+}
+
+.step-by-step p a.email-suggestion:hover {
+	background-color:var(--plan-aqua);
+}
+
+/* Highlights */
+
+
+.step-by-step span.note{
+	background-color: var(--highlight-yellow);
+	display:block;
+	padding:20px;
+	border-radius:5px;
+	width:80%;
+	margin:20px auto;
+	font-weight:500;
+}
+
+.step-by-step span.warning {
+	background-color: var(--plan-pink);
+	color: white;
+	padding:20px;
+	border-radius:5px;
+	display:block;
+	width:80%;
+	margin:20px auto;
+	font-weight:500;
+}
+
+.step-by-step span.warning .ui-name {
+	color:white;
+}
+
+.step-by-step span.important{
+	background-color: var(--highlight-green);
+	display:block;
+	padding:20px 20px;
+	border-radius:5px;
+	width:80%;
+	margin:20px auto;
+	font-weight:500;
+}
+
+.step-by-step span.rewind{
+	background-color: var(--highlight-purple);
+	display:block;
+	padding:20px 20px;
+	border-radius:5px;
+	width:80%;
+	margin:20px auto;
+	font-weight:500;
+}
+
+
+/* Table of Contents */
+.step-by-step #toc {
+	margin-bottom:20px;
+}
+.step-by-step #toc a {
+	display:block;
+	font-weight:700;
+}
+
+/* Section 1 */
+
+.step-by-step #toc-section-1 {
+	border-left:5px solid var(--blue);
+	padding-left:20px;
+	color:var(--plan-aqua);	
+}
+
+.step-by-step #section-1 {
+	border-left:5px solid var(--blue);
+	padding-left:20px;
+}
+
+.step-by-step #section-1 h2, .step-by-step #section-1 h3 {
+	color:var(--blue);
+	
+}
+
+/* Section 2 */
+
+.step-by-step #toc-section-2 {
+	border-left:5px solid var(--purple);
+	padding-left:20px;
+	color:var(--purple);	
+}
+
+.step-by-step #toc-section-2 li {
+	padding: 0;
+	margin: 0;
+	color:var(--purple)!important;	
+}
+
+.step-by-step #toc-section-2 a{
+	color:var(--purple)!important;	
+}
+
+.step-by-step #section-2 {
+	border-left:5px solid var(--purple);
+	padding-left:20px;
+}
+
+.step-by-step #section-2 h2, .step-by-step #section-2 h3 {
+	color:var(--purple);
+}
+
+/* Section 3 */
+.step-by-step #toc-section-3 {
+	border-left:5px solid var(--pink);
+	padding-left:20px;
+	color:var(--pink);	
+}
+
+.step-by-step #toc-section-3 li {
+	padding: 0;
+	margin: 0;
+	color:var(--pink)!important;	
+}
+
+.step-by-step #toc-section-3 a{
+	color:var(--pink)!important;	
+}
+
+.step-by-step #section-3 {
+	border-left:5px solid var(--pink);
+	padding-left:20px;
+}
+
+.step-by-step #section-3 h2, .step-by-step #section-3 h3 {
+	color:var(--pink);
+	
+}
+
+/* Section 4 */
+
+.step-by-step #toc-section-4 {
+	border-left:5px solid var(--orange);
+	padding-left:20px;
+	color:var(--orange)!important;	
+}
+
+.step-by-step #toc-section-4 li {
+	padding: 0;
+	margin: 0;
+	color:var(--orange)!important;	
+}
+
+.step-by-step #toc-section-4 a{
+	color:var(--orange)!important;	
+}
+
+.step-by-step #section-4  {
+	border-left:5px solid var(--orange);
+	padding-left:20px;
+}
+
+.step-by-step #section-4 h2, .step-by-step #section-4 h3 {
+	color:var(--orange);
+	
+}
+
+/* Section 5 */
+
+.step-by-step #toc-section-5 {
+	border-left:5px solid var(--lime);
+	padding-left:20px;
+	color:var(--lime);	
+}
+
+.step-by-step #toc-section-5 li {
+	padding: 0;
+	margin: 0;
+	color:var(--lime)!important;	
+}
+
+.step-by-step #toc-section-5 a{
+	color:var(--lime)!important;	
+}
+
+.step-by-step #section-5 {
+	border-left:5px solid var(--lime);
+	padding-left:20px;
+}
+
+.step-by-step #section-5 h2, .step-by-step #section-5 h3 {
+	color:var(--lime);
+	
+}
+
+/* Section 6 */
+
+.step-by-step #toc-section-6 {
+	border-left:5px solid var(--gold);
+	padding-left:20px;
+	color:var(--gold);	
+}
+
+.step-by-step #section-6 {
+	border-left:5px solid var(--gold);
+	padding-left:20px;
+}
+
+.step-by-step #section-6 h2, .step-by-step #section-6 h3 {
+	color:var(--gold);
+	
+}
+
+/* Section 7 */
+
+.step-by-step #toc-section-7 {
+	border-left:5px solid var(--magenta);
+	padding-left:20px;
+	color:var(--magenta);	
+}
+
+.step-by-step #section-7 {
+	border-left:5px solid var(--magenta);
+	padding-left:20px;
+}
+
+.step-by-step #section-7 h2, .step-by-step #section-7 h3 {
+	color:var(--magenta);
+}
+
+/* Section 8 */
+
+.step-by-step #toc-section-8 {
+	border-left:5px solid var(--royal-blue);
+	padding-left:20px;
+	color:var(--royal-blue);	
+}
+
+.step-by-step #section-8 {
+	border-left:5px solid var(--royal-blue);
+	padding-left:20px;
+}
+
+.step-by-step #section-8 h2, .step-by-step #section-8 h3 {
+	color:var(--royal-blue);
+}
+
+/* Section 9 */
+
+.step-by-step #toc-section-9 {
+	border-left:5px solid var(--crimson-red);
+	padding-left:20px;
+	color:var(--crimson-red);	
+}
+
+.step-by-step #section-9 {
+	border-left:5px solid var(--crimson-red);
+	padding-left:20px;
+}
+
+.step-by-step #section-9 h2, .step-by-step #section-9 h3 {
+	color:var(--crimson-red);
+}
+
+
+/* Tables */
+
+
+.step-by-step thead th:first-of-type {
+	border-radius: 5px 0 0 0;
+}
+
+.step-by-step thead th:last-of-type {
+	border-radius: 0 5px 0 0;
+}
+
+.step-by-step tbody {
+	color:rgb(120,120,120);
+	font-weight:500;
+}
+
+.step-by-step tbody tr:hover {
+	background-color:#eff9ff;
+	color:rgb(50,50,50);
+}
+
+.step-by-step .thead-blue{
+	background-color: #0299e0;
+}
+
+.step-by-step th, .step-by-step td {
+  text-align: left;
+  vertical-align: middle;
+  padding:10px;
+}
+
+
+.step-by-step li .tool-tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #023F76;
+}
+
+.step-by-step .tool-tip .tool-tip-text {
+	font-size:smaller;
+  visibility: hidden;
+  width: 140px;
+  background-color: #023F76;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -70px;
+}
+
+.tool-tip .tool-tip-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #023F76 transparent transparent transparent;
+}
+
+
+.step-by-step .tool-tip:hover .tool-tip-text {
+  visibility: visible;
+}
+
+
+/* The Planet */
+
+body#planet-page {
+	background-color:black;
+	background-image: url("https://theplan-assets.s3-us-west-2.amazonaws.com/members/img/the-planet/GFX09_The Plan_Bg2_compressed.png");
+	background-size:cover;
+}
+
+.planet-back-button {
+	position:absolute;
+	text-align:center;
+	line-height:3;
+	text-decoration:none;
+	color:#01C0FC !important;
+	font-weight:500;
+	text-transform:uppercase;	
+	letter-spacing:2;
+	display:inline-block;
+	margin:0 auto;
+	padding:0 20;
+	border-radius:5px;
+}
+
+.planet-back-button:hover {
+	color:white !important;
+	background-color:#f217ff !important;
+	box-shadow: inset 0px 33px 41px #4f16d4;
+	text-shadow:0px 0px 8px white;
+}
+
+.arrow {
+  border: solid #01C0FC;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.left-arrow {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+#planet-page video#planet-loop {
+	width:100%;
+	max-width: 800px;
+	margin:-5% auto 10 auto;
+	z-index:-1;
+}
+
+#planet-page .tagline {
+	text-align:center;
+	text-transform: uppercase;
+	color:white;
+	text-shadow:0px 0px 20px #bfbcff;
+	font-size:1.1em;
+	letter-spacing: 4;
+	margin-bottom:80px;
+}
+
+#the-planet-stream {
+	width:100%;
+	box-shadow:0px 0px 100px #2c2973;
+	margin-bottom:20px;
+}
+
+#slido-planel {
+	width:100%;
+	height:800px;
+	border:1px solid #1e1d3c;
+	box-shadow:0px 0px 100px #2c2973;
+	border-bottom:1px inset #302e86;
+	z-index:1;
+}
+
+#planet-page .cta {
+	text-align:center;
+	text-transform: uppercase;
+	color:white;
+	text-shadow:0px 0px 20px #bfbcff;
+	font-size:1.1em;
+	letter-spacing: 4;
+	margin:50 0;
+}
+
+#planet-buttons-row {
+	margin-top:0px;
+	margin-bottom:50px;
+}
+
+#planet-page .button-container {
+	text-align: center;
+	margin-bottom:50px;	
+}
+
+.planet-button-description {
+	text-align:center;
+	color:white;
+}
+
+a.planet-button {
+	text-align:center;
+	background-color:#f217ff;
+	line-height:3;
+	text-decoration:none;
+	color:white;
+	font-weight:500;
+	text-shadow:0px 0px 8px white;
+	text-transform:uppercase;	
+	letter-spacing:2;
+	display:inline-block;
+	margin:0 auto;
+	padding:0 40;
+	border-radius:5px;
+	box-shadow: inset 0px 33px 41px #4f16d4;
+	border-top:1px solid #be73ff;
+	min-width:70%;
+}
+
+a.planet-button:hover {
+	background-color:#f655ff;	
+	box-shadow: inset 0px 33px 41px #7754c8;
+	color:white !important;
+}
+
+#planet-footer-row p {
+	text-align:center;
+	color:#bfbcff;
+	font-size:.8em;
+}
+
+.main-content-video {
+    max-width:1300px;
+    margin:auto;
+}
+
+.main-content-container {
+    max-width:950px;
+}
+
+
+
