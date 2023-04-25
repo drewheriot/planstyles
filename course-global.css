@@ -1,25 +1,11 @@
-/********* RCI DO NOT COPY THESE TOP STYLES ********/
+/********* GLOBAL STYLES *****/
 
 body{
 	box-sizing: border-box;
 	background-color: var(--bg-color);
 	padding: 5rem 2rem;
+	font-family: "Montserrat", sans-serif;
 }
-
-
-.card-wrap {
-	max-width: 1100px;
-	margin: auto;
-}
-
-.card-wrap .step-by-step {
-	border-radius: 20px;
-	padding: 4rem 0;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-/********* RCI COPY FROM BELOW HERE *****/
-
 
 /********* STEP BY STEP STYLES *****/
 
