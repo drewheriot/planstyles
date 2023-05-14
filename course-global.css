@@ -40,6 +40,22 @@ body{
 	--plan-yellow:#FFD932;
 }		
 
+/* Style lesson name and step-by-step text */
+
+.main-content-container h1.post-body-title {
+	text-align:center !important;
+}
+
+#sbs-title {
+	text-transform:uppercase;
+	font-weight:800;
+	text-align: center;
+	color: var(--plan-aqua);
+}
+
+
+/* Step by step styles */
+
 .step-by-step .img-container {
 	margin-left:0px;
 	margin-bottom:50px;
