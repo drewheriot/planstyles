@@ -46,15 +46,13 @@ body{
 	text-align:center !important;
 }
 
-#sbs-title {
+p#sbs-title {
 	text-transform:uppercase;
 	font-weight:800;
 	text-align: center;
+	letter-spacing:3px;
 	color: var(--plan-aqua);
 }
-
-
-/* Step by step styles */
 
 .step-by-step .img-container {
 	margin-left:0px;
