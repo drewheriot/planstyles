@@ -5,6 +5,7 @@ body{
 	background-color: var(--bg-color);
 	padding: 5rem 2rem;
 	font-family: "Montserrat", sans-serif !important;
+	font-weight:500;
 }
 
 /********* STEP BY STEP STYLES *****/
@@ -409,12 +410,18 @@ p a.email-suggestion:hover {
 
 .step-by-step .thead-blue{
 	background-color: #0299e0;
+	color:white;
+	text-transform: uppercase;
 }
 
 .step-by-step th, .step-by-step td {
   text-align: left;
   vertical-align: middle;
   padding:10px;
+}
+
+.step-by-step td {
+	border:1px solid #eee;
 }
 
 
