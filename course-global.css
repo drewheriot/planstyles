@@ -114,7 +114,7 @@ p.suggestion-request {
 	text-align:center;
 }
 
-.step-by-step p a.email-suggestion {
+p a.email-suggestion {
 	text-align:center;
 	display:inline-block;
 	background-color:var(--plan-mid-blue);
@@ -126,7 +126,7 @@ p.suggestion-request {
 	text-decoration: none;
 }
 
-.step-by-step p a.email-suggestion:hover {
+p a.email-suggestion:hover {
 	background-color:var(--plan-aqua);
 }
 
