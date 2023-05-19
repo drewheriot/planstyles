@@ -465,20 +465,25 @@ p a.email-suggestion:hover {
 
 /* Style Download button benath video */
 
+
 g#download-icon rect#Rectangle {
-	fill:var(--plan-aqua) !important;
+	fill:#FFFFFF !important;
 }
 
 g#download-icon polyline#Path {
-	stroke:var(--plan-aqua) !important;
+	stroke:#FFFFFF !important;
 }
 
 .downloads span.downloads-trigger-text {
-	color: var(--plan-aqua) !important;
+	color: #FFFFFF !important;
 }
 
 a.downloads-trigger {
-	color: var(--plan-aqua) !important;
+	background-color: #2e91fc !important;
+	padding:10px;
+	font-weight: bold;
+	border-radius:5px;
+	color:white;
 }
 
 
