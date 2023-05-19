@@ -474,7 +474,11 @@ g#download-icon polyline#Path {
 }
 
 .downloads span.downloads-trigger-text {
-	color: var(--plan-aqua);
+	color: var(--plan-aqua) !important;
+}
+
+a.downloads-trigger {
+	color: var(--plan-aqua) !important;
 }
 
 
