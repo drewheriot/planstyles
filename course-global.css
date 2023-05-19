@@ -463,6 +463,20 @@ p a.email-suggestion:hover {
   visibility: visible;
 }
 
+/* Style Download button benath video */
+
+g#download-icon rect#Rectangle {
+	fill:var(--plan-aqua) !important;
+}
+
+g#download-icon polyline#Path {
+	stroke:var(--plan-aqua) !important;
+}
+
+.downloads span.downloads-trigger-text {
+	color: var(--plan-aqua);
+}
+
 
 /* The Planet */
 
@@ -602,6 +616,9 @@ a.planet-button:hover {
 .main-content-container {
     max-width:950px;
 }
+
+
+
 
 
 
