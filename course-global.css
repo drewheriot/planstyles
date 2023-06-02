@@ -506,6 +506,10 @@ body#planet-page .main-content-spacer {
 	max-width:2200px; /* contains width of stream and panel */
 }
 
+body#planet-page .product-title-back {
+	color:white !important;
+}
+
 .planet-back-button {
 	position:absolute;
 	text-align:center;
