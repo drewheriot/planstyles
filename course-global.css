@@ -503,6 +503,7 @@ body#planet-page .main-content {
 
 body#planet-page .main-content-spacer {
 	margin-top:30px !important;
+	max-width:2200px; /* contains width of stream and panel */
 }
 
 .planet-back-button {
