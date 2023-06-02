@@ -493,12 +493,16 @@ body#planet-page {
 	background-color:black;
 	background-image: url("https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/site/2147643518/products/ba018-f08-6d8-341b-cd6b8871adb5_GFX09_The_Plan_Bg2_compressed.png");
 	background-size:cover;
-	height:inherit !important;
+	height:auto !important;
 	padding: 2rem !important;
 }
 
 body#planet-page .main-content {
 	overflow-y:visible !important;
+}
+
+body#planet-page .main-content-spacer {
+	margin-top:30px !important;
 }
 
 .planet-back-button {
