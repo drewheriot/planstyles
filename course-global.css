@@ -99,9 +99,9 @@ p#sbs-title {
 	font-weight:800;
 }
 
-.step-by-step a {
+.step-by-step a, .post-body a {
 	color: var(--plan-mid-blue);
-	text-decoration:none;
+	text-decoration:underline;
 	font-weight:bold;
 }
 
