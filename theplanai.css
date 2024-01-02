@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2family=Montserrat:wght@500;600;700&display=swap');
+
+
+body {
+background-color:#130133;
+font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ---------- Nav Desktop ----------- */
+
+nav.navbar {
+padding: 30px 30px 0px 30px !important;
+background-color: #130133 !important;
+}
+
+nav.navbar ul li a, a.btn.btn-disabled {
+color:rgba(255, 255, 255, .7) !important;
+text-transform:uppercase !important;
+letter-spacing: 2px;
+padding-left:15px !important;
+padding-right:15px !important;
+}
+
+nav.navbar ul li a:hover, a.btn.btn-disabled:hover {
+color:white !important;
+background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%) !important;
+border-radius:5px !important;
+border:0px solid #380B7A !important;
+}
+
+/* ---------- Nav Mobile ----------- */
+
+#offcanvasNavbar {
+background-color:#130133 !important;
+}
+
+h5.offcanvas-title {
+color:rgba(255, 255, 255, 1) !important;
+text-transform:uppercase !important;
+letter-spacing: 2px;
+}
+
+button.btn-close {
+color:white !important;
+}
+
+/* ---------- Apps Cards ----------- */
+
+.PageHeader_container__v0px1 {
+border-bottom: none;
+}
+
+.container {
+padding-bottom:100px;
+}
+
+
+.card-body {
+background-color:#380B7A !important;
+border:none !important;
+border-radius:15px 15px 15px 15px !important;
+padding: 30px !important;
+}
+
+.card .card-body p img {
+width:100%;
+}
+
+.card-body img {
+border-radius:15px 15px 0px 0px !important;
+}
+
+.badge {
+background-color: rgba(0,0,0,.2)!important;
+border:none !important;
+color: rgba(255,255,255,.7) !important;
+padding: 10px !important;
+}
+
+.PageHeader_headerTitle__LNxkC {
+font-weight: 700;
+line-height: 1;
+text-transform: uppercase;
+color: white;
+margin-top: 20px;
+font-size: 3em;
+}
+
+.history-list {
+display:none;
+}
+
+.card {
+background-color:transparent !important;
+color:white;
+border:none !important;
+}
+
+
+label {
+color: white !important;
+}
+
+label.form-label {
+color: rgb(33, 37, 41) !important;
+}
+
+/* ---------- Headings ----------- */
+
+h1.card-title {
+color:white !important;
+border-bottom:1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+h3, h4.text-start {
+color:#EFCDFF !important;
+margin-top:30px;
+}
+
+/* ---------- Cards ----------- */
+
+.app-card {
+padding:20px !important;
+border-radius:15px;
+}
+
+h4.card-title, a.card-title, .card-title a { 
+color:white !important;
+text-transform: uppercase !important;
+text-align:center !important;
+letter-spacing:1px !important;
+font-size: .9em !important;
+}
+
+.app-render h4.card-title {
+font-size:1.5em;
+margin-bottom:30px;
+}
+
+.app-render .card-body {
+border-radius: 0px 0px 15px 15px !important;
+}
+
+.app-render .card img {
+border-radius:15px 15px 0px 0px !important;
+}
+
+/* ---------- Forms ----------- */
+
+.text-secondary, .card-body p, .card-body ul li, a.ms-3 {
+color:#EFCDFF !important;
+}
+
+textarea.form-control, .form-control, select.form-select {
+background: #21084E !important;
+border: none;
+color: white !important;
+}
+
+textarea.form-control::selection {
+background:white;
+}
+
+textarea.form-control::placeholder {
+color:rgb(255,255,255,.6);
+}
+
+label.form-label {
+color:rgb(255,255,255,.6);
+}
+
+.form-control, select.form-select {
+border-radius: 15px !important;
+padding:1rem;
+}
+
+.form-control:focus {
+box-shadow:0 0 0 0.25rem rgba(13,110,253,.65);
+}
+
+/* ---------- Tables ----------- */
+
+tbody, td, thead, tfoot, th, tr {
+color:white !important;
+}
+
+tr {
+border-bottom: 0px solid rgb(255,255,255,.1) !important;
+color: rgb(239, 205, 255);
+}
+
+
+/* ---------- Buttons ----------- */
+button.btn {
+background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%);
+border: none;
+padding: 10px 40px;
+border-radius: 10px;
+font-size:1.2em;
+}
+
+.app-text-display h3 {
+color: #21084E !important;
+}
+
+.mb-5 {
+background:none !important;
+}
