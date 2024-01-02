@@ -44,7 +44,14 @@ button.btn-close {
 color:white !important;
 }
 
-/* ---------- Apps Cards ----------- */
+/* ---------- Headings ----------- */
+
+h3, h4.text-start {
+color:#EFCDFF !important;
+margin-top:30px;
+}
+
+/* ---------- App Cards on App page ----------- */
 
 .PageHeader_container__v0px1 {
 border-bottom: none;
@@ -54,12 +61,12 @@ border-bottom: none;
 padding-bottom:100px;
 }
 
-
 .card-body {
 background-color:#380B7A !important;
 border:none !important;
 border-radius:15px 15px 15px 15px !important;
 padding: 30px !important;
+width:100% !important;
 }
 
 .card .card-body p img {
@@ -70,24 +77,19 @@ width:100%;
 border-radius:15px 15px 0px 0px !important;
 }
 
-.badge {
-background-color: rgba(0,0,0,.2)!important;
-border:none !important;
-color: rgba(255,255,255,.7) !important;
-padding: 10px !important;
+.app-card {
+padding:20px !important;
+border-radius:15px;
 }
 
-.PageHeader_headerTitle__LNxkC {
-font-weight: 700;
-line-height: 1;
-text-transform: uppercase;
-color: white;
-margin-top: 20px;
-font-size: 3em;
+.app-card a {
+    background-image: none;
+    padding: 7px;
+    border-radius: 20px
 }
 
-.history-list {
-display:none;
+.app-card a:hover {
+background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%) !important;
 }
 
 .card {
@@ -96,32 +98,9 @@ color:white;
 border:none !important;
 }
 
-
-label {
-color: white !important;
-}
-
-label.form-label {
-color: rgb(33, 37, 41) !important;
-}
-
-/* ---------- Headings ----------- */
-
-h3, h4.text-start {
-color:#EFCDFF !important;
-margin-top:30px;
-}
-
-/* ---------- Cards ----------- */
-
-.app-card {
-padding:20px !important;
-border-radius:15px;
-}
-
 .card-title {
 color:white !important;
-border-bottom:1px solid rgba(255, 255, 255, 0.2) !important;
+border-bottom:1px solid rgba(255, 255, 255, 0) !important;
 }
 
 
@@ -145,6 +124,35 @@ border-radius: 0px 0px 15px 15px !important;
 .app-render .card img {
 border-radius:15px 15px 0px 0px !important;
 }
+
+.badge {
+background-color: rgba(0,0,0,.2)!important;
+border:none !important;
+color: rgba(255,255,255,.7) !important;
+padding: 10px !important;
+}
+
+.PageHeader_headerTitle__LNxkC {
+font-weight: 700;
+line-height: 1;
+text-transform: uppercase;
+color: white;
+margin-top: 20px;
+font-size: 3em;
+}
+
+.history-list {
+display:none;
+}
+
+label {
+color: white !important;
+}
+
+label.form-label {
+color: rgb(33, 37, 41) !important;
+}
+
 
 /* ---------- Forms ----------- */
 
