@@ -489,6 +489,18 @@ a.downloads-trigger {
 	color:white;
 }
 
+/* Style Login to ThePlanAi button */
+
+#pf-login-container a.btn.btn-success {
+    background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    text-decoration: none;
+}
+
 
 /* The Planet */
 
