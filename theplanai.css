@@ -61,7 +61,15 @@ color:white !important;
 color:rgb(255,255,255,.6) !important;
 }
 
+/* ---------- Profile Page ----------- */
 
+#page-profile a.btn-success {
+background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%);
+border: none;
+padding: 10px 40px;
+border-radius: 10px;
+font-size: 1.2em;
+}
 
 /* ---------- App Cards on App page ----------- */
 
@@ -231,6 +239,10 @@ border: none;
 padding: 10px 40px;
 border-radius: 10px;
 font-size:1.2em;
+}
+
+button.btn:hover {
+box-shadow: 0px 0px 50px #d61b90;
 }
 
 .app-text-display h3 {
