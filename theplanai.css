@@ -51,6 +51,18 @@ color:#EFCDFF !important;
 margin-top:30px;
 }
 
+/* ---------- Log in screen ----------- */
+
+#page-user-login h1 {
+color:white !important;
+}
+
+#page-user-login label.form-label {
+color:rgb(255,255,255,.6) !important;
+}
+
+
+
 /* ---------- App Cards on App page ----------- */
 
 .PageHeader_container__v0px1 {
@@ -59,6 +71,11 @@ border-bottom: none;
 
 .container {
 padding-bottom:100px;
+}
+
+#page-apps h5.card-title {
+text-transform:uppercase;
+text-align:center !important;
 }
 
 .card-body {
@@ -92,6 +109,12 @@ border-radius:15px;
 background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%) !important;
 }
 
+.col.py-3.my-3 {
+display:none;
+}
+
+/* ---------- Header Panel in individual app  ----------- */
+
 .card {
 background-color:transparent !important;
 color:white;
@@ -109,7 +132,7 @@ color:white !important;
 text-transform: uppercase !important;
 text-align:center !important;
 letter-spacing:1px !important;
-font-size: .9em !important;
+font-size: 1.9em !important;
 }
 
 .app-render h4.card-title {
@@ -130,6 +153,7 @@ background-color: rgba(0,0,0,.2)!important;
 border:none !important;
 color: rgba(255,255,255,.7) !important;
 padding: 10px !important;
+margin:5px !important;
 }
 
 .PageHeader_headerTitle__LNxkC {
@@ -152,6 +176,7 @@ color: white !important;
 label.form-label {
 color: rgb(33, 37, 41) !important;
 }
+
 
 
 /* ---------- Forms ----------- */
