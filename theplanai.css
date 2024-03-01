@@ -51,9 +51,17 @@ color:#EFCDFF !important;
 margin-top:30px;
 }
 
+/* ------- Page-user-setup --------- */
+#page-user-setup p.fs-3, 
+#page-user-setup h1 {
+ color:white !important;
+}
+
+
 /* ---------- Log in screen ----------- */
 
-#page-user-login h1 {
+#page-user-login h1, 
+#page-user-forgot h1 {
 color:white !important;
 }
 
@@ -209,6 +217,9 @@ color:rgb(255,255,255,.6);
 
 label.form-label {
 color:rgb(255,255,255,.6);
+
+#page-user-forgot .form-label {
+color:rgb(255,255,255,.6) !important;
 }
 
 .form-control, select.form-select {
