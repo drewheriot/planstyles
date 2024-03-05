@@ -215,12 +215,6 @@ textarea.form-control::placeholder {
 color:rgb(255,255,255,.6);
 }
 
-label.form-label {
-color:rgb(255,255,255,.6);
-
-#page-user-forgot .form-label {
-color:rgb(255,255,255,.6) !important;
-}
 
 .form-control, select.form-select {
 border-radius: 15px !important;
@@ -229,6 +223,25 @@ padding:1rem;
 
 .form-control:focus {
 box-shadow:0 0 0 0.25rem rgba(13,110,253,.65);
+}
+
+/* ---------- Form tags on light bg ----------- */
+
+#page-apps-view-403 label.form-label {
+	color:#000000;
+}
+
+/* heading for second set of inputs */
+#page-apps-view-403 h5 {
+	color:#000000 !important;
+}
+
+
+
+/* ---------- Form tags on dark bg ----------- */
+
+#page-user-forgot .form-label {
+color:rgb(255,255,255,.6) !important;
 }
 
 /* ---------- Tables ----------- */
