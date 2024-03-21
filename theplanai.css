@@ -239,9 +239,14 @@ box-shadow:0 0 0 0.25rem rgba(13,110,253,.65);
 
 
 /* ---------- Form tags on dark bg ----------- */
-
+#page-user-setup .form-label,
 #page-user-forgot .form-label {
 color:rgb(255,255,255,.6) !important;
+}
+
+/* Illustrate app */
+#page-apps-view-541 h5 {
+color:rgba(255, 255, 255, 1) !important;
 }
 
 /* ---------- Tables ----------- */
@@ -276,3 +281,5 @@ color: #21084E !important;
 .mb-5 {
 background:none !important;
 }
+
+/* ---------- New Styles for Export Feature ----------- */
