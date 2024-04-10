@@ -288,7 +288,30 @@ color: #21084E !important;
 background:none !important;
 }
 
+
 /* ---------- Export buttons ----------- */
+
+.btn-group .btn.btn-outline-secondary {
+    min-width: 40px;
+    background: none;
+    background-image: none;
+    position: relative;
+    top: 40px;
+    right: 10px;
+    border-radius: 8px;
+    border-right: 2px solid rgba(255, 255, 255, .2);
+    box-shadow:none;
+    color:gray;
+}
+
+.btn-group .btn.btn-outline-secondary:hover {
+    background: #ddd;
+}
+
+.btn-group .btn.btn-outline-secondary i {
+font-size:15px !important;
+}
+
 .prompt-result-header-title {
 margin-top:0px!important;
 }
