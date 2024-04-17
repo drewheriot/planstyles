@@ -285,11 +285,15 @@ color: #21084E !important;
 }
 
 .mb-5 {
-background:none !important;
+    background:none !important;
 }
 
 
 /* ---------- Export buttons ----------- */
+
+.bg-light {
+    padding-top:45px !important;
+}
 
 .btn-group .btn.btn-outline-secondary {
     min-width: 40px;
@@ -299,7 +303,6 @@ background:none !important;
     top: 40px;
     right: 10px;
     border-radius: 8px;
-    border-right: 2px solid rgba(255, 255, 255, .2);
     box-shadow:none;
     color:gray;
 }
