@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Pie Calculator</title>
+    <style>
+        .small-decimals {
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body>
+    <h1>Investment Pie Calculator</h1>
+    
+    <label for="capital">Enter your investment capital: </label>
+    <input type="number" id="capital" placeholder="Enter amount"><br><br>
+
+    <label for="gridBotGold">Enter Grid Bot Gold percentage (0-100): </label>
+    <input type="number" id="gridBotGold" placeholder="50"><br><br>
+
+    <label for="rainbowBand">Select Rainbow Band: </label>
+    <select id="rainbowBand">
+        <option value="1">Maximum Bubble Territory</option>
+        <option value="2">Sell. Seriously, SELL!</option>
+        <option value="3">FOMO intensifies</option>
+        <option value="4">Is this a bubble?</option>
+        <option value="5">HODL!</option>
+        <option value="5">Still cheap</option>
+        <option value="5">Accumulate</option>
+        <option value="5">BUY!</option>
+        <option value="5">Basically a Fire Sale</option>
+
+    </select><br><br>
+
+    <button onclick="calculate()">Calculate</button>
+
+    <h2>Results</h2>
+    <p>Reserve (20%): <span id="reserve"></span></p>
+    <p>HODL (30%): <span id="hodl"></span></p>
+    <p>Strategies (50%): <span id="strategies"></span></p>
+
+    <h3>Grid Bot Gold</h3>
+    <p>Grid Bot Gold Amount: <span id="gridBotAmount"></span></p>
+    <p>Number of Bots: <span id="numberOfBots"></span> (Remainder: <span id="botRemainder"></span>)</p>
+
+    <h3>Scale Trading</h3>
+    <p>Scale Trading (Remaining %): <span id="scaleTrading"></span></p>
+    <p>Set Aside (50% of Scale Trading): <span id="setAside"></span></p>
+    <p>Active (50% of Scale Trading): <span id="active"></span></p>
+
+    <h3>Active Breakdown</h3>
+    <p>Active (Divided by Rainbow): <span id="activeRainbow"></span></p>
+    <p>Initial Order Size: <span id="initialOrder"></span></p>
+    <p>DCA1: <span id="dca1"></span></p>
+    <p>DCA2: <span id="dca2"></span></p>
+    <p>Total per Position: <span id="totalPosition"></span></p>
+
+    <script>
+        function formatNumber(num) {
+            return num.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+        }
+
+        function formatCurrency(num) {
+            var [whole, decimal] = num.toFixed(2).split('.');
+            if (decimal === "00") {
+                return "$" + formatNumber(parseFloat(whole));  // No decimals if ".00"
+            }
+            return "$" + formatNumber(parseFloat(whole)) + '<small>.' + decimal + '</small>';  // Display decimals
+        }
+
+        function calculate() {
+            var capital = parseFloat(document.getElementById("capital").value);
+            var gridBotGoldPercent = parseFloat(document.getElementById("gridBotGold").value);
+            var rainbowValue = parseFloat(document.getElementById("rainbowBand").value);
+
+            // Core allocations
+            var reserve = capital * 0.2;
+            var hodl = capital * 0.3;
+            var strategies = capital * 0.5;
+
+            // Split Strategies into Grid Bot Gold and Scale Trading
+            var gridBotAmount = strategies * (gridBotGoldPercent / 100);
+            var scaleTrading = strategies - gridBotAmount; // Remaining percentage for Scale Trading
+
+            // Scale Trading breakdown
+            var setAside = scaleTrading * 0.5;   // 50% of Scale Trading
+            var active = scaleTrading * 0.5;     // 50% of Scale Trading
+
+            // Active breakdown based on Rainbow value
+            var activeRainbow = active / rainbowValue;
+
+            // DCA values based on Active
+            var totalPerPosition = activeRainbow;
+            var dca2 = totalPerPosition / 2;
+            var dca1 = dca2 / 2;
+            var initialOrderSize = dca1;
+
+            // Grid Bot Gold - Number of Bots and remainder
+            var numberOfBots = Math.floor(gridBotAmount / 1000);  // Assume $1000 per bot
+            var botRemainder = gridBotAmount % 1000;
+
+            // Display results with thousands separator and conditional decimals
+            document.getElementById("reserve").innerHTML = formatCurrency(reserve);
+            document.getElementById("hodl").innerHTML = formatCurrency(hodl);
+            document.getElementById("strategies").innerHTML = formatCurrency(strategies);
+
+            document.getElementById("gridBotAmount").innerHTML = formatCurrency(gridBotAmount);
+            document.getElementById("numberOfBots").textContent = formatNumber(numberOfBots);
+            document.getElementById("botRemainder").innerHTML = formatCurrency(botRemainder);
+
+            document.getElementById("scaleTrading").innerHTML = formatCurrency(scaleTrading);
+            document.getElementById("setAside").innerHTML = formatCurrency(setAside);
+            document.getElementById("active").innerHTML = formatCurrency(active);
+
+            document.getElementById("activeRainbow").innerHTML = formatCurrency(activeRainbow);
+            document.getElementById("initialOrder").innerHTML = formatCurrency(initialOrderSize);
+            document.getElementById("dca1").innerHTML = formatCurrency(dca1);
+            document.getElementById("dca2").innerHTML = formatCurrency(dca2);
+            document.getElementById("totalPosition").innerHTML = formatCurrency(totalPerPosition);
+        }
+    </script>
+</body>
+</html>
