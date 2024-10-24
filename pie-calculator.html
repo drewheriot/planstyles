@@ -13,41 +13,51 @@
 <body>
     <h1>Investment Pie Calculator</h1>
     
-    <label for="capital">Enter your investment capital: </label>
+    <p>This calculator helps you diversify your investment capital according to The Pie.</p>
+    <p>IMPORTANT: Heads up! The calculator's results are not stored, so if you want to save them, please copy and paste them, or just take a screenshot.</p>
+    <p>Start by entering how much you want to invest in crypto...</p>
+    <label for="capital">Investment capital: </label>
     <input type="number" id="capital" placeholder="Enter amount"><br><br>
-
-    <label for="gridBotGold">Enter Grid Bot Gold percentage (0-100): </label>
+<p>The Plan currently offers two strategies (Grid Bot Gold and Scale Trading). How much do you want to invest in Grid Bot Gold? The rest will be apportioned to Scale Trading.</p>
+    <label for="gridBotGold">Grid Bot Gold %: </label>
     <input type="number" id="gridBotGold" placeholder="50"><br><br>
+<p>Since Altcoins tend to ride on Bitcoin's coat tails, we can use the Bitcoin Rainbow to help us figure out how much to "Set Aside" as we start Scale Trading. 50% is generally recommended, but if the Bitcoin price is in the upper bands of the rainbow (bubble territory), this calculator will recommend having a larger <strong>Set Aside</strong> so you have more capital ready to take advantage of price dips in the future. So...
+	<ol>
+		<li>Head over to <a href="theplan.link/rainbow" target="_blank" class="">The Bitcoin Rainbow</a> page</li>
+		<li>Scroll down to "The NEW Bitcoin Rainbow2023 Chart"</li>
+		<li>Identify the name of the "band" that Bitcoin is currently in</li>
+		<li>
+		    <label for="rainbowBand">Select the rainbow band: </label>
+		    <select id="rainbowBand">
+		        <option value=".1">Maximum Bubble Territory</option>
+		        <option value=".2">Sell. Seriously, SELL!</option>
+		        <option value=".3">FOMO intensifies</option>
+		        <option value=".4">Is this a bubble?</option>
+		        <option value=".5">HODL!</option>
+		        <option value=".5">Still cheap</option>
+		        <option value=".5">Accumulate</option>
+		        <option value=".5">BUY!</option>
+		        <option value=".5">Basically a Fire Sale</option>
+		    </select><br><br>
+		</li>
+</ol>
 
-    <label for="rainbowBand">Select Rainbow Band: </label>
-    <select id="rainbowBand">
-        <option value="1">Maximum Bubble Territory</option>
-        <option value="2">Sell. Seriously, SELL!</option>
-        <option value="3">FOMO intensifies</option>
-        <option value="4">Is this a bubble?</option>
-        <option value="5">HODL!</option>
-        <option value="5">Still cheap</option>
-        <option value="5">Accumulate</option>
-        <option value="5">BUY!</option>
-        <option value="5">Basically a Fire Sale</option>
-
-    </select><br><br>
-
+Now we're ready to go!</p>
     <button onclick="calculate()">Calculate</button>
 
-    <h2>Results</h2>
-    <p>Reserve (20%): <span id="reserve"></span></p>
-    <p>HODL (30%): <span id="hodl"></span></p>
-    <p>Strategies (50%): <span id="strategies"></span></p>
+    <h2>The Pie</h2>
+    <p>20% Reserve: <span id="reserve"></span></p>
+    <p>30% HODL: <span id="hodl"></span></p>
+    <p>50% Strategies: <span id="strategies"></span></p>
 
-    <h3>Grid Bot Gold</h3>
-    <p>Grid Bot Gold Amount: <span id="gridBotAmount"></span></p>
-    <p>Number of Bots: <span id="numberOfBots"></span> (Remainder: <span id="botRemainder"></span>)</p>
+    <h3>'Grid Bot Gold' Strategy</h3>
+    <p>Based on your percentage above, you've chosen to invest <span id="gridBotAmount"></span> in <strong>Grid Bot Gold</strong></p>
+    <p>This means you can start <span id="numberOfBots"></span> bots at $1000 each with <span id="botRemainder"></span> left over</p>
 
-    <h3>Scale Trading</h3>
+    <h3>'Scale Trading' Strategy</h3>
     <p>Scale Trading (Remaining %): <span id="scaleTrading"></span></p>
-    <p>Set Aside (50% of Scale Trading): <span id="setAside"></span></p>
-    <p>Active (50% of Scale Trading): <span id="active"></span></p>
+    <p>Set Aside (based on the Bitcoin Rainbow): <span id="setAside"></span></p>
+    <p>Active: <span id="active"></span></p>
 
     <h3>Active Breakdown</h3>
     <p>Active (Divided by Rainbow): <span id="activeRainbow"></span></p>
@@ -84,8 +94,8 @@
             var scaleTrading = strategies - gridBotAmount; // Remaining percentage for Scale Trading
 
             // Scale Trading breakdown
-            var setAside = scaleTrading * 0.5;   // 50% of Scale Trading
-            var active = scaleTrading * 0.5;     // 50% of Scale Trading
+            var setAside = scaleTrading * (1-rainbowValue);   // % to be set aside
+            var active = scaleTrading * rainbowValue;     // Remainder to be allocated to horseshoe bot
 
             // Active breakdown based on Rainbow value
             var activeRainbow = active / rainbowValue;
