@@ -1,300 +1,229 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-
-
 body {
-background-color:#130133;
+background-color:#e8e8e8;
 font-family: 'Montserrat', sans-serif !important;
 }
-
 /* ---------- Nav Desktop ----------- */
-
 nav.navbar {
 padding: 30px 30px 0px 30px !important;
-background-color: #130133 !important;
+background-color: #e8e8e8 !important;
 }
-
 nav.navbar ul li a, a.btn.btn-disabled {
-color:rgba(255, 255, 255, .7) !important;
+color:rgba(87,87,87, .7) !important;
 text-transform:uppercase !important;
 letter-spacing: 2px;
 padding-left:15px !important;
 padding-right:15px !important;
 }
-
 nav.navbar ul li a:hover, a.btn.btn-disabled:hover {
-color:white !important;
-background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%) !important;
+color:rgb(255, 255, 255) !important;
+background-image: linear-gradient(135deg, #7452b4 0%, #330f75 74%) !important;
 border-radius:5px !important;
-border:0px solid #380B7A !important;
+border:0px solid #e8e8e8 !important;
 }
-
 /* ---------- Nav Mobile ----------- */
-
 #offcanvasNavbar {
-background-color:#130133 !important;
+background-color:#e8e8e8 !important;
 }
-
 h5.offcanvas-title {
-color:rgba(255, 255, 255, 1) !important;
+color:rgb(255, 255, 255) !important;
 text-transform:uppercase !important;
 letter-spacing: 2px;
 }
-
 button.btn-close {
-color:white !important;
+color:rgb(255, 255, 255) !important;
 }
-
 /* ---------- Headings ----------- */
-
 h3, h4.text-start {
-color:#EFCDFF !important;
+color: rgb(51,15,117) !important;
 margin-top:30px;
 }
-
 /* ------- Page-user-setup --------- */
 #page-user-setup p.fs-3, 
 #page-user-setup h1 {
- color:white !important;
+ color:rgb(17, 17, 17) !important;
 }
-
-
 /* ---------- Log in screen ----------- */
-
 #page-user-login h1, 
 #page-user-forgot h1 {
-color:white !important;
+color:rgb(55, 55, 55) !important;
 }
-
 #page-user-login label.form-label {
-color:rgb(255,255,255,.6) !important;
+color:rgba(31, 31, 31, 0.982) !important;
 }
-
 /* ---------- Profile Page ----------- */
-
 #page-profile a.btn-success {
-background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%);
+background-image: linear-gradient(135deg, #7452b4 0%, #330f75 74%);
 border: none;
-padding: 10px 40px;
+padding: 10px 10px;
 border-radius: 10px;
 font-size: 1.2em;
 }
-
 /* ---------- App Cards on App page ----------- */
-
 .PageHeader_container__v0px1 {
 border-bottom: none;
 }
-
 .container {
 padding-bottom:100px;
 }
-
 #page-apps h5.card-title {
 text-transform:uppercase;
 text-align:center !important;
 }
-
 .card-body {
-background-color:#380B7A !important;
+background-color:#dddddd !important;
 border:none !important;
 border-radius:15px 15px 15px 15px !important;
 padding: 30px !important;
 width:100% !important;
 }
-
 .card .card-body p img {
 width:100%;
 }
-
 .card-body img {
 border-radius:15px 15px 0px 0px !important;
 }
-
 .app-card {
 padding:20px !important;
 border-radius:15px;
 }
-
 .app-card a {
     background-image: none;
     padding: 7px;
     border-radius: 20px
 }
-
 .app-card a:hover {
-background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%) !important;
+background-image: linear-gradient(135deg, #7452b4 0%, #330f75 74%) !important;
 }
-
 .col.py-3.my-3 {
 display:none;
 }
-
 /* ---------- Header Panel in individual app  ----------- */
-
 .card {
 background-color:transparent !important;
-color:white;
+color:rgb(255, 255, 255);
 border:none !important;
 }
-
 .card-title {
-color:white !important;
+color: rgb(33,37,41) !important;
 border-bottom:1px solid rgba(255, 255, 255, 0) !important;
 }
-
-
 h4.card-title, a.card-title, .card-title a { 
-color:white !important;
+color: rgb(33,37,41) !important;
 text-transform: uppercase !important;
 text-align:center !important;
 letter-spacing:1px !important;
 font-size: 1.9em !important;
 }
-
 .app-render h4.card-title {
 font-size:1.5em;
 margin-bottom:30px;
 }
-
 .app-render .card-body {
 border-radius: 0px 0px 15px 15px !important;
 }
-
+.app-header-card .card-body {
+border-radius: 0px 0px 15px 15px !important;
+}
 .app-render .card img {
 border-radius:15px 15px 0px 0px !important;
 }
-
 .badge {
-background-color: rgba(0,0,0,.2)!important;
+background-color: rgb(124, 124, 124)!important;
 border:none !important;
-color: rgba(255,255,255,.7) !important;
+color: rgb(255, 255, 255) !important;
 padding: 10px !important;
 margin:5px !important;
 }
-
 .PageHeader_headerTitle__LNxkC {
 font-weight: 700;
 line-height: 1;
 text-transform: uppercase;
-color: white;
+color: rgb(255, 255, 255);
 margin-top: 20px;
 font-size: 3em;
 }
-
-.history-list {
-display:none;
-}
-
 label {
-color: white !important;
+color: rgb(33, 37, 41) !important;
 }
-
 label.form-label {
 color: rgb(33, 37, 41) !important;
 }
-
-
 .edit-app-btn, .delete-app-btn {
     padding: 0 !important;
     margin: 0 !important;
     font-size: .9em !important;
     background: none !important;
 }
-
 /* ---------- Forms ----------- */
-
 .text-secondary, .card-body p, .card-body ul li, a.ms-3 {
-color:#EFCDFF !important;
+color:#606060 !important;
 }
-
 textarea.form-control, .form-control, select.form-select {
-background: #21084E !important;
+background: #ffffff !important;
 border: none;
-color: white !important;
+color: rgb(80, 80, 80) !important;
 }
-
 textarea.form-control::selection {
-background:white;
+background:rgb(80, 80, 80);
 }
-
 textarea.form-control::placeholder, 
 input.form-control::placeholder {
-color:rgb(255,255,255,.6) !important;
+color:rgb(121, 121, 121) !important;
 }
-
 .form-control, select.form-select {
 border-radius: 15px !important;
 padding:1rem;
 }
-
 .form-control:focus {
-box-shadow:0 0 0 0.25rem rgba(13,110,253,.65);
+box-shadow:0 0 0 0.25rem rgba(54, 54, 54, 0.65);
 }
-
 /* ---------- Form tags on light bg ----------- */
-
 #page-apps-view-403 label.form-label {
-	color:#000000;
+    color:#000000;
 }
-
 /* heading for second set of inputs */
 #page-apps-view-403 h5 {
-	color:#000000 !important;
+    color:#575757 !important;
 }
-
-
-
 /* ---------- Form tags on dark bg ----------- */
 #page-user-setup .form-label,
 #page-user-forgot .form-label {
-color:rgb(255,255,255,.6) !important;
+color:rgba(47, 47, 47, 0.6) !important;
 }
-
 /* Illustrate app */
 #page-apps-view-541 h5 {
-color:rgba(255, 255, 255, 1) !important;
+color:rgb(255, 255, 255) !important;
 }
-
 /* ---------- Tables ----------- */
-
 tbody, td, thead, tfoot, th, tr {
-color:white !important;
+color:rgb(120, 120, 120) !important;
 }
-
 tr {
-border-bottom: 0px solid rgb(255,255,255,.1) !important;
-color: rgb(239, 205, 255);
+border-bottom: 0px solid rgba(80, 80, 80, 0.1) !important;
+color: rgb(80, 80, 80);
 }
-
-
 /* ---------- Buttons ----------- */
 button.btn {
-background-image: linear-gradient(135deg, #daaa2c 0%, #d61b90 74%);
+background-image: linear-gradient(135deg, #9d9d9d 0%, #787878 74%);
 border: none;
 padding: 10px 40px;
 border-radius: 10px;
 font-size:1.2em;
 }
-
 button.btn:hover {
-box-shadow: 0px 0px 50px #d61b90;
+box-shadow: 0px 0px 50px #808080;
 }
-
 .app-text-display h3 {
-color: #21084E !important;
+color: #575757 !important;
 }
-
 .mb-5 {
     background:none !important;
 }
-
-
 /* ---------- Export buttons ----------- */
-
 .bg-light {
     padding-top:45px !important;
 }
-
 .btn-group .btn.btn-outline-secondary {
     min-width: 40px;
     background: none;
@@ -306,21 +235,17 @@ color: #21084E !important;
     box-shadow:none;
     color:gray;
 }
-
 .btn-group .btn.btn-outline-secondary:hover {
-    background: #ddd;
+    background: #808080;
 }
-
 .btn-group .btn.btn-outline-secondary i {
 font-size:15px !important;
 }
-
 .prompt-result-header-title {
 margin-top:0px!important;
 }
-
 .prompt-result-toolbar button {
-color: white;
+color: rgb(87, 87, 87);
 padding: 0px 5px 0px 5px;
 }
 .ql-video {
